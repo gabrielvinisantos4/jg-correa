@@ -83,7 +83,7 @@ export function Hero() {
               Explorar imóveis <ArrowUpRight className="h-4 w-4" />
             </Link>
             <a href={whatsappLink()} target="_blank" rel="noopener noreferrer" className="btn btn-ghost-light !px-7 !py-4">
-              <WhatsAppIcon className="h-5 w-5 text-whats" /> Falar pelo WhatsApp
+              <span className="whats-squircle -my-1 -ml-2 h-8 w-8"><WhatsAppIcon className="h-[18px] w-[18px]" /></span> Falar pelo WhatsApp
             </a>
           </motion.div>
         </div>

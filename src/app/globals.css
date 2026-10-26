@@ -93,12 +93,56 @@
     background: #ffd451;
     box-shadow: 0 10px 30px -10px rgba(242, 194, 48, 0.7);
   }
+  /* WhatsApp no estilo Apple: verde iOS, brilho interno sutil, sombra suave, tipografia do sistema */
   .btn-whats {
-    background: var(--color-whats);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", var(--font-sans);
+    font-weight: 600;
+    letter-spacing: -0.01em;
     color: white;
+    background: linear-gradient(180deg, #3fdc72 0%, #2cc85f 52%, #22b553 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.38),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+      0 1px 2px rgba(14, 92, 43, 0.22),
+      0 10px 24px -10px rgba(34, 181, 83, 0.6);
+    transition: transform 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft), filter 0.25s;
   }
   .btn-whats:hover {
-    background: #18994f;
+    filter: brightness(1.04) saturate(1.05);
+    transform: translateY(-1px);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.42),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.08),
+      0 2px 4px rgba(14, 92, 43, 0.2),
+      0 16px 32px -12px rgba(34, 181, 83, 0.7);
+  }
+  .btn-whats:active {
+    transform: scale(0.97);
+    filter: brightness(0.97);
+  }
+  /* Ícone em "squircle", como um ícone de app */
+  .whats-squircle {
+    display: inline-grid;
+    place-items: center;
+    color: white;
+    border-radius: 28%;
+    background: linear-gradient(180deg, #5cf38c 0%, #2bc65d 55%, #1fae4f 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.45),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.1),
+      0 4px 10px -3px rgba(31, 174, 79, 0.55);
+  }
+  /* Vidro fosco (estilo "Liquid Glass") */
+  .glass-pill {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", var(--font-sans);
+    background: rgba(255, 255, 255, 0.72);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.9),
+      0 1px 2px rgba(10, 24, 56, 0.08),
+      0 18px 40px -14px rgba(10, 24, 56, 0.35);
   }
   .btn-ghost-light {
     border: 1px solid rgba(255, 255, 255, 0.28);

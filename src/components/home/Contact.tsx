@@ -33,7 +33,7 @@ export function Contact() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 rounded-3xl bg-paper p-5 ring-1 ring-line transition-all hover:ring-whats"
               >
-                <span className="grid h-12 w-12 place-items-center rounded-2xl bg-whats text-white">
+                <span className="whats-squircle h-12 w-12">
                   <WhatsAppIcon className="h-6 w-6" />
                 </span>
                 <span>
