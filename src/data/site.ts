@@ -7,7 +7,11 @@ export const site = {
   nomeCompleto: "JG Corrêa Construtora e Imobiliária",
   descricaoCurta: "Construtora e Imobiliária",
   creci: "CRECI PJ 813",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://jgcorrea.com.br",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://jg-correa.vercel.app"),
 
   whatsapp: {
     numero: "5544991517069",
